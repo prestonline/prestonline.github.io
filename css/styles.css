@@ -30,10 +30,21 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 0;
+  animation: 1s ease 0s 1 background-image-fade-in;
+}
+
+@keyframes background-image-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .background-overlay {
-  background: #f7f7f7c0;
+  background: #f7f7f7d9;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -61,10 +72,43 @@ body {
   width: 100%;
   font-size: 4em;
   margin-bottom: 0;
+  animation: 2s ease 0s 1 slide-right;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-240px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(-240px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .slogan {
   font-size: 2em;
+  animation: 3s ease 0s 1 slogan-fade-in;
+}
+
+@keyframes slogan-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 601px) {
