@@ -1,7 +1,22 @@
-.quote-unknown {
+blockquote {
+  background: #0114;
+  color: #000;
+  border-radius: 4px;
+  padding: 1em;
+  backdrop-filter: blur(4px);
+}
+
+@media (prefers-color-scheme: dark) {
+  blockquote {
+    background: #eff4;
+    color: #fff;
+  }
+}
+
+.quote {
   font-size: 1.5em;
 }
 
-.cite--unknown {
+.cite {
   text-align: right;
 }

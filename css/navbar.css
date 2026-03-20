@@ -1,21 +1,28 @@
 .navbar {
   display: flex;
-  background: transparent;
+  background: linear-gradient(to bottom, #fff, #fff0);
   padding: 12px 16px;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9999;
 }
 
+@media (prefers-color-scheme: dark) {
+  .navbar {
+  background: linear-gradient(to bottom, #000, #0000);
+}
+} 
+
 .navbar--container {
   max-width: 800px;
   margin: 0 auto;
   width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (max-width: 600px) {
@@ -27,11 +34,15 @@
 
 .navbar--right {
   display: flex;
+  width: 50%;
   align-items: center;
   justify-content: center;
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 2.8em;
   height: 2.8em;
   border-radius: 50%;
