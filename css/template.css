@@ -1,3 +1,10 @@
 .container {
-  margin-top: 3rem;
+  margin: 0 auto;
+  top: 4em;
+}
+
+@media (min-width: 601px) {
+  .container {
+    padding: 2em 0;
+  }
 }
