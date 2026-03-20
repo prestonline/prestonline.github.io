@@ -52,7 +52,7 @@
   text-decoration: none;
   font-weight: 400;
   color: #090909;
-  transition: 0.3s all ease;
+  transition: 0.3s color ease;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -60,14 +60,15 @@
     color: #f7f7f7;
   }
 
-  .item a:hover {
+  .item a:hover,
+  .item--active a {
     color: #40a0f9;
   }
 }
 
-.item a:hover {
+.item a:hover,
+.item--active a {
   color: #2098f0;
-  font-size: 0.9rem;
 }
 
 button {
