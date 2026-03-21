@@ -103,17 +103,52 @@ body {
   }
 }
 
+.fade-in {
+  animation: 2s ease 0s 1 fade-in;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.index-title,
+._404-title {
+  font-size: 4em;
+}
+
+._404-title {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.slogan-title,
+._404-subtitle {
+  font-size: 2em;
+}
+
 @media (max-width: 600px) {
   .container {
     width: 100%;
     padding: 2em 1em;
   }
 
-  .index-title {
+  .index-title,
+  ._404-title {
     font-size: 3em;
   }
 
-  .slogan {
+  .slogan,
+  ._404-subtitle {
     font-size: 1.5em;
   }
 }
@@ -124,11 +159,13 @@ body {
     padding: 1em;
   }
 
-  .index-title {
+  .index-title,
+  ._404-title {
     font-size: 2em;
   }
 
-  .slogan {
+  .slogan,
+  ._404-subtitle {
     font-size: 1.25em;
   }
 }
