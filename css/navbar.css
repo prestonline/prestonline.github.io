@@ -68,7 +68,8 @@
   padding: 0 15px;
 }
 
-.item a {
+.item a,
+li a.item-a {
   text-decoration: none;
   font-weight: 400;
   color: #090909;
@@ -76,19 +77,24 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .item a {
+  .item a,
+  li a.item-a {
     color: #f7f7f7;
   }
 
   .item a:hover,
+  .item a.item--active,
   .item--active a,
+  .item a:active,
   .button {
     color: #40a0f9;
   }
 }
 
 .item a:hover,
+.item a.item--active,
 .item--active a,
+.item a:active,
 .button {
   color: #2098f0;
 }

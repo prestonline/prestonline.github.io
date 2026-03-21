@@ -4,6 +4,7 @@ for (let i = 0; i < a.length; i++) {
   if (a.item(i).classList.value.includes(" home")) continue;
   a.item(i).onclick = async function (event) {
     event.preventDefault();
+    a.item(i).classList.value = "button item--active";
     document.getElementById("container").classList.value += " fade-out";
     for (let j = 0; j < a.length; j++) {
       if (
@@ -17,14 +18,14 @@ for (let i = 0; i < a.length; i++) {
     // Posted by Dan Dascalescu, modified by community. See post 'Timeline' for change history
     // Retrieved 2026-03-20, License - CC BY-SA 4.0
 
-    await new Promise((r) => setTimeout(r, 1000));
+    await new Promise((r) => setTimeout(r, 800));
     document.getElementById("container").remove();
     for (let j = 0; j < a.length; j++) {
       if (
         a.item(j).href !== a.item(i).href &&
         a.item(j).classList.value.includes("home") === false
       )
-        a.item(j).classList.value = "";
+        a.item(j).classList.value = "item-a";
     }
 
     window.location.href = a.item(i).href;
@@ -52,8 +53,7 @@ for (let i = 0; i < h.length; i++) {
     // Posted by Dan Dascalescu, modified by community. See post 'Timeline' for change history
     // Retrieved 2026-03-20, License - CC BY-SA 4.0
 
-    await new Promise((r) => setTimeout(r, 1000));
-
+    await new Promise((r) => setTimeout(r, 800));
     document.getElementById("container").remove();
     document.getElementById("background").remove();
     for (let j = 0; j < a.length; j++) {
@@ -61,7 +61,7 @@ for (let i = 0; i < h.length; i++) {
         a.item(j).href !== a.item(i).href &&
         a.item(j).classList.value.includes("home") === false
       )
-        a.item(j).classList.value = "";
+        a.item(j).classList.value = "item-a";
     }
     window.location.href = "index.html";
 
