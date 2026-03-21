@@ -13,11 +13,12 @@
       src="images/stars.webp"
       alt="somewhere in space surrounded by a view of beautiful stars"
       class="background-image"
+      id="background"
     />
     <div class="background-overlay"></div>
     <nav class="navbar">
       <div class="navbar--container">
-        <a href="index.html" class="logo logo--active">Home</a>
+        <a href="index.html" class="logo logo--active home">Home</a>
         <div class="navbar--right">
           <ul class="menu">
             <li class="item"><a href="about.html">About</a></li>
@@ -27,15 +28,16 @@
         </div>
       </div>
     </nav>
-    <div class="container container--index">
+    <div id="container" class="container container--index">
       <div class="center fade-in">
         <h1 class="_404-title">4<span class="index-title--on">0</span>4</h1>
         <p class="_404-subtitle">
           Page not found.
           <br />
-          <a class="button" href="index.html">Go to Home Page</a>
+          <a class="button home" href="index.html">Go to Home Page</a>
         </p>
       </div>
     </div>
+    <script src="scripts/fade-out.js"></script>
   </body>
 </html>

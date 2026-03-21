@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home | Prestonline Portfolio</title>
+    <title>Projects | Prestonline Portfolio</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/navbar.css" rel="stylesheet" />
@@ -13,11 +13,12 @@
       src="images/stars.webp"
       alt="somewhere in space surrounded by a view of beautiful stars"
       class="background-image"
+      id="background"
     />
     <div class="background-overlay"></div>
     <nav class="navbar">
       <div class="navbar--container">
-        <a href="index.html" class="logo logo--active">Home</a>
+        <a href="index.html" class="logo logo--active home">Home</a>
         <div class="navbar--right">
           <ul class="menu">
             <li class="item"><a href="about.html">About</a></li>
@@ -27,8 +28,16 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <!-- markup for this page goes here -->
+    <div id="container" class="container container--index">
+      <div class="center fade-in">
+        <h1 class="_404-title">🚧⚠️🚧</h1>
+        <p class="_404-subtitle">
+          Page under construction.
+          <br />
+          <a class="button home" href="index.html">Go to Home Page</a>
+        </p>
+      </div>
     </div>
+    <script src="scripts/fade-out.js"></script>
   </body>
 </html>

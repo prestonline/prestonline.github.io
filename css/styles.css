@@ -121,6 +121,20 @@ body {
   }
 }
 
+.fade-out {
+  animation: 1s ease 0s 1 fade-out;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .index-title,
 ._404-title {
   font-size: 4em;
