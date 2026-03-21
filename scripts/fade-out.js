@@ -5,12 +5,27 @@ for (let i = 0; i < a.length; i++) {
   a.item(i).onclick = async function (event) {
     event.preventDefault();
     document.getElementById("container").classList.value += " fade-out";
+    for (let j = 0; j < a.length; j++) {
+      if (
+        a.item(j).href !== a.item(i).href &&
+        a.item(j).classList.value.includes("home") === false
+      )
+        a.item(j).classList.value = " fade-out-active";
+    }
+
     // Source - https://stackoverflow.com/a/39914235
     // Posted by Dan Dascalescu, modified by community. See post 'Timeline' for change history
     // Retrieved 2026-03-20, License - CC BY-SA 4.0
 
     await new Promise((r) => setTimeout(r, 1000));
     document.getElementById("container").remove();
+    for (let j = 0; j < a.length; j++) {
+      if (
+        a.item(j).href !== a.item(i).href &&
+        a.item(j).classList.value.includes("home") === false
+      )
+        a.item(j).classList.value = "";
+    }
 
     window.location.href = a.item(i).href;
 
@@ -26,6 +41,13 @@ for (let i = 0; i < h.length; i++) {
     document.getElementById("background").classList.value =
       "background-image fade-out";
     document.getElementById("container").classList.value += " fade-out";
+    for (let j = 0; j < a.length; j++) {
+      if (
+        a.item(j).href !== a.item(i).href &&
+        a.item(j).classList.value.includes("home") === false
+      )
+        a.item(j).classList.value = " fade-out-active";
+    }
     // Source - https://stackoverflow.com/a/39914235
     // Posted by Dan Dascalescu, modified by community. See post 'Timeline' for change history
     // Retrieved 2026-03-20, License - CC BY-SA 4.0
@@ -34,6 +56,13 @@ for (let i = 0; i < h.length; i++) {
 
     document.getElementById("container").remove();
     document.getElementById("background").remove();
+    for (let j = 0; j < a.length; j++) {
+      if (
+        a.item(j).href !== a.item(i).href &&
+        a.item(j).classList.value.includes("home") === false
+      )
+        a.item(j).classList.value = "";
+    }
     window.location.href = "index.html";
 
     return false;
