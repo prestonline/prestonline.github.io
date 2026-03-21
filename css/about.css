@@ -14,7 +14,7 @@ blockquote {
 }
 
 .quote {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .cite {
@@ -31,8 +31,11 @@ table {
   padding: 0;
 }
 
+tr,
 th,
-td {
+td,
+tr th,
+tr td {
   border: 0;
 }
 
